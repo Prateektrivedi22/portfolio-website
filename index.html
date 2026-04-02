@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitika Gupta — Video Editor & Animator</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="noise-overlay"></div>
+    <div class="scanline"></div>
+    <div class="ambient-background">
+        <div class="ambient-blob blob-1"></div>
+        <div class="ambient-blob blob-2"></div>
+        <div class="ambient-blob blob-3"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">N<span class="logo-dot">.</span>G</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link"><span class="nav-num">01</span>Home</a></li>
+            <li><a href="#about" class="nav-link"><span class="nav-num">02</span>About</a></li>
+            <li><a href="#portfolio" class="nav-link"><span class="nav-num">03</span>Portfolio</a></li>
+        </ul>
+        <div class="nav-progress"></div>
+    </nav>
+
+    <!-- HERO — clean, no buttons, no scroll hint -->
+    <section class="hero" id="home">
+        <div class="hero-bg-video">
+            <div class="hero-grid-lines"></div>
+            <div class="hero-vignette"></div>
+        </div>
+        <div class="filmstrip-wrapper top">
+            <div class="filmstrip-track">
+                <span>BRAND FILM</span><span class="dot">&#9679;</span><span>MOTION GRAPHICS</span><span
+                    class="dot">&#9679;</span><span>COLOR GRADING</span><span class="dot">&#9679;</span><span>2D
+                    ANIMATION</span><span class="dot">&#9679;</span><span>VFX COMPOSITING</span><span
+                    class="dot">&#9679;</span><span>SOCIAL REELS</span><span class="dot">&#9679;</span><span>BRAND
+                    FILM</span><span class="dot">&#9679;</span><span>MOTION GRAPHICS</span><span
+                    class="dot">&#9679;</span><span>COLOR GRADING</span><span class="dot">&#9679;</span><span>2D
+                    ANIMATION</span><span class="dot">&#9679;</span><span>VFX COMPOSITING</span><span
+                    class="dot">&#9679;</span><span>SOCIAL REELS</span><span class="dot">&#9679;</span>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">Freelance Video Editor &amp; Animator</span>
+                <span class="eyebrow-line"></span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line" data-text="BRINGING">BRINGING</span>
+                <span class="title-line accent-line" data-text="STORIES">STORIES</span>
+                <span class="title-line" data-text="TO LIFE">TO LIFE</span>
+            </h1>
+            <p class="hero-description">
+                Transforming raw footage into compelling visual narratives.<br>
+                Commercials &middot; Motion Graphics &middot; Cinematic Color Grading
+            </p>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-number" data-target="500">0</span><span
+                        class="stat-plus">+</span><span class="stat-label">Global Clients</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-number" data-target="3">0</span><span
+                        class="stat-plus">.5</span><span class="stat-label">Years Experience</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-number" data-target="120">0</span><span
+                        class="stat-plus">+</span><span class="stat-label">Projects Done</span></div>
+            </div>
+        </div>
+
+        <div class="filmstrip-wrapper bottom">
+            <div class="filmstrip-track reverse">
+                <span>ADOBE PREMIERE</span><span class="dot">&#9679;</span><span>AFTER EFFECTS</span><span
+                    class="dot">&#9679;</span><span>DAVINCI RESOLVE</span><span class="dot">&#9679;</span><span>CINEMA
+                    4D</span><span class="dot">&#9679;</span><span>PHOTOSHOP</span><span
+                    class="dot">&#9679;</span><span>ILLUSTRATOR</span><span class="dot">&#9679;</span><span>ADOBE
+                    PREMIERE</span><span class="dot">&#9679;</span><span>AFTER EFFECTS</span><span
+                    class="dot">&#9679;</span><span>DAVINCI RESOLVE</span><span class="dot">&#9679;</span><span>CINEMA
+                    4D</span><span class="dot">&#9679;</span><span>PHOTOSHOP</span><span
+                    class="dot">&#9679;</span><span>ILLUSTRATOR</span><span class="dot">&#9679;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="about-inner">
+            <div class="about-visual reveal-left">
+                <div class="about-img-frame">
+                    <img src="nitika-photo.webp" alt="Nitika Gupta">
+                    <div class="img-border-accent"></div>
+                    <div class="float-tag tag-ae">After Effects</div>
+                    <div class="float-tag tag-pr">Premiere Pro</div>
+                    <div class="float-tag tag-ps">Photoshop</div>
+                    <div class="exp-badge"><span class="exp-num">3.5</span><span class="exp-label">Years
+                            of<br>Experience</span></div>
+                </div>
+            </div>
+            <div class="about-content reveal-right">
+                <div class="section-label">02 / About Me</div>
+                <h2 class="about-title">Hey, I'm<br><span class="about-name">Nitika<br>Gupta</span></h2>
+                <p class="about-bio">A professional video editor and motion graphics artist with <strong>3.5
+                        years</strong> of hands-on experience. Worked with <strong>500+ global clients</strong>
+                    delivering high-quality content across styles, genres, and industries &mdash; always adapting my
+                    craft to match each client's unique vision.</p>
+                <div class="specialty-grid">
+                    <div class="specialty-item"><svg class="sp-svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg><span>Gaming Edits</span></div>
+                    <div class="specialty-item"><svg class="sp-svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg><span>2D Animation</span></div>
+                    <div class="specialty-item"><svg class="sp-svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="M23 7l-7 5 7 5V7z" />
+                            <rect x="1" y="5" width="15" height="14" rx="2" />
+                        </svg><span>Talking Head</span></div>
+                    <div class="specialty-item"><svg class="sp-svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg><span>Real Estate</span></div>
+                    <div class="specialty-item"><svg class="sp-svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                        </svg><span>Wedding Films</span></div>
+                    <div class="specialty-item"><svg class="sp-svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+                        </svg><span>Intl. Weddings</span></div>
+                </div>
+                <div class="tools-row">
+                    <span class="tools-label">Tools I Use</span>
+                    <div class="tools-list">
+                        <span class="tool-chip">After Effects</span>
+                        <span class="tool-chip">Premiere Pro</span>
+                        <span class="tool-chip">Photoshop</span>
+                    </div>
+                </div>
+                <div class="about-cta">
+                    <a href="https://wa.me/917985175601" target="_blank" class="contact-pill whatsapp">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span>+91 79851 75601</span>
+                    </a>
+                    <a href="mailto:technedit19@gmail.com" class="contact-pill email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                            height="18">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <span>technedit19@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="about-ticker">
+            <div class="ticker-track">
+                <span>500+ Global Clients</span><span class="t-dot">&#9670;</span><span>Motion Graphics
+                    Specialist</span><span class="t-dot">&#9670;</span><span>3.5 Years Experience</span><span
+                    class="t-dot">&#9670;</span><span>Gaming &bull; Wedding &bull; Real Estate</span><span
+                    class="t-dot">&#9670;</span><span>Adobe Certified Workflow</span><span
+                    class="t-dot">&#9670;</span><span>500+ Global Clients</span><span
+                    class="t-dot">&#9670;</span><span>Motion Graphics Specialist</span><span
+                    class="t-dot">&#9670;</span><span>3.5 Years Experience</span><span
+                    class="t-dot">&#9670;</span><span>Gaming &bull; Wedding &bull; Real Estate</span><span
+                    class="t-dot">&#9670;</span><span>Adobe Certified Workflow</span><span class="t-dot">&#9670;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO — Editorial Column Layout -->
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-intro reveal-up">
+            <div class="section-label">03 / Portfolio</div>
+            <div class="portfolio-intro-inner">
+                <h2 class="section-title">Featured <em>Work</em></h2>
+                <p class="portfolio-intro-text">Every project is a story. Here's how each chapter looks.</p>
+            </div>
+        </div>
+
+        <!-- Column Layout -->
+        <div class="work-columns">
+
+            <!-- Col 1: Brand Film -->
+            <div class="work-col reveal-col" style="--col-delay:0s">
+                <div class="col-header">
+                    <span class="col-num">01</span>
+                    <h3 class="col-title">Brand<br>Film</h3>
+                    <div class="col-line"></div>
+                    <span class="col-count">2 Works</span>
+                </div>
+                <div class="col-items">
+                    <div class="work-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1">
+                        <div class="work-card-img">
+                            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=600&q=80"
+                                alt="Nike Tech Campaign">
+                            <div class="work-card-play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="6 3 20 12 6 21 6 3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card-info">
+                            <h4>Nike Tech Campaign</h4>
+                            <div class="work-meta">
+                                <span>Brand Film</span>
+                                <span class="work-dot">&#183;</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1">
+                        <div class="work-card-img">
+                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=600&q=80"
+                                alt="Neon Nights">
+                            <div class="work-card-play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="6 3 20 12 6 21 6 3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card-info">
+                            <h4>Neon Nights Music Video</h4>
+                            <div class="work-meta">
+                                <span>Brand Film</span>
+                                <span class="work-dot">&#183;</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 2: Social Reel -->
+            <div class="work-col reveal-col" style="--col-delay:0.12s">
+                <div class="col-header">
+                    <span class="col-num">02</span>
+                    <h3 class="col-title">Social<br>Reel</h3>
+                    <div class="col-line"></div>
+                    <span class="col-count">2 Works</span>
+                </div>
+                <div class="col-items">
+                    <div class="work-card" data-video="https://player.vimeo.com/video/455325916?autoplay=1">
+                        <div class="work-card-img">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80"
+                                alt="Autumn Drop">
+                            <div class="work-card-play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="6 3 20 12 6 21 6 3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card-info">
+                            <h4>Instagram Autumn Drop</h4>
+                            <div class="work-meta">
+                                <span>Social Reel</span>
+                                <span class="work-dot">&#183;</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card" data-video="https://player.vimeo.com/video/455325916?autoplay=1">
+                        <div class="work-card-img">
+                            <img src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?auto=format&fit=crop&w=600&q=80"
+                                alt="TikTok Transition">
+                            <div class="work-card-play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="6 3 20 12 6 21 6 3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card-info">
+                            <h4>TikTok Trend Transition</h4>
+                            <div class="work-meta">
+                                <span>Social Reel</span>
+                                <span class="work-dot">&#183;</span>
+                                <span>2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 3: 2D Animation -->
+            <div class="work-col reveal-col" style="--col-delay:0.24s">
+                <div class="col-header">
+                    <span class="col-num">03</span>
+                    <h3 class="col-title">2D<br>Animation</h3>
+                    <div class="col-line"></div>
+                    <span class="col-count">2 Works</span>
+                </div>
+                <div class="col-items">
+                    <div class="work-card" data-video="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1">
+                        <div class="work-card-img">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80"
+                                alt="Cyberpunk">
+                            <div class="work-card-play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="6 3 20 12 6 21 6 3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card-info">
+                            <h4>Cyberpunk Title Sequence</h4>
+                            <div class="work-meta">
+                                <span>2D Animation</span>
+                                <span class="work-dot">&#183;</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card" data-video="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1">
+                        <div class="work-card-img">
+                            <img src="https://images.unsplash.com/photo-1580894732444-8ecbef79bd1e?auto=format&fit=crop&w=600&q=80"
+                                alt="App Explainer">
+                            <div class="work-card-play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="6 3 20 12 6 21 6 3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card-info">
+                            <h4>App Explainer</h4>
+                            <div class="work-meta">
+                                <span>2D Animation</span>
+                                <span class="work-dot">&#183;</span>
+                                <span>2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 4: Motion Graphics -->
+            <div class="work-col reveal-col" style="--col-delay:0.36s">
+                <div class="col-header">
+                    <span class="col-num">04</span>
+                    <h3 class="col-title">Motion<br>Graphics</h3>
+                    <div class="col-line"></div>
+                    <span class="col-count">2 Works</span>
+                </div>
+                <div class="col-items">
+                    <div class="work-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1">
+                        <div class="work-card-img">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
+                                alt="Motion Reel">
+                            <div class="work-card-play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="6 3 20 12 6 21 6 3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card-info">
+                            <h4>Product Launch Reel</h4>
+                            <div class="work-meta">
+                                <span>Motion Graphics</span>
+                                <span class="work-dot">&#183;</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card" data-video="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1">
+                        <div class="work-card-img">
+                            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=600&q=80"
+                                alt="Kinetic Type">
+                            <div class="work-card-play">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="6 3 20 12 6 21 6 3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="work-card-info">
+                            <h4>Kinetic Typography Ad</h4>
+                            <div class="work-meta">
+                                <span>Motion Graphics</span>
+                                <span class="work-dot">&#183;</span>
+                                <span>2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- end .work-columns -->
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-logo">N<span>.</span>G</div>
+                <div class="social-links">
+                    <a href="https://wa.me/917985175601" target="_blank" aria-label="WhatsApp" class="social-link"><svg
+                            viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg></a>
+                    <a href="mailto:technedit19@gmail.com" aria-label="Email" class="social-link"><svg
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nitika Gupta. All rights reserved.</p>
+                <p class="footer-craft">Crafted with precision &amp; passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
+
+    <div id="video-modal" class="video-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg></button>
+            <div class="video-container"><iframe id="modal-iframe" src="" frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
