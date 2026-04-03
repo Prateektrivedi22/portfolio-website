@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         const animCursor=()=>{ringX+=(mouseX-ringX)*.12;ringY+=(mouseY-ringY)*.12;cursorRing.style.left=ringX+'px';cursorRing.style.top=ringY+'px';requestAnimationFrame(animCursor);};
         animCursor();
-        document.querySelectorAll('a,button,.work-card,.specialty-item,.contact-pill').forEach(el=>{
+        document.querySelectorAll('a,button,.v-card,.filter-btn,.specialty-item,.contact-pill').forEach(el=>{
             el.addEventListener('mouseenter',()=>document.body.classList.add('cursor-hover'));
             el.addEventListener('mouseleave',()=>document.body.classList.remove('cursor-hover'));
         });
@@ -74,47 +74,112 @@ document.addEventListener('DOMContentLoaded', () => {
         spObs.observe(spGrid);
     }
 
-    /* WORK CARD IMAGE PARALLAX */
-    document.querySelectorAll('.work-card').forEach(card=>{
-        card.addEventListener('mousemove',e=>{
-            const r=card.getBoundingClientRect();
-            const x=((e.clientX-r.left)/r.width-.5)*2;
-            const y=((e.clientY-r.top)/r.height-.5)*2;
-            const img=card.querySelector('img');
-            if(img)img.style.transform=`scale(1.07) translate(${x*4}px,${y*4}px)`;
-        });
-        card.addEventListener('mouseleave',()=>{const img=card.querySelector('img');if(img)img.style.transform='';});
+    /* CARD STAGGER REVEAL ON SCROLL */
+    const allVCards = document.querySelectorAll('.v-card');
+
+    // Assign stagger delay per card (cap at 20 so last cards don't wait too long)
+    allVCards.forEach((card, i) => {
+        card.style.setProperty('--stagger', `${Math.min(i, 20) * 0.055}s`);
     });
 
-        /* VIDEO MODAL */
-    const modal=document.getElementById('video-modal');
-    const iframe=document.getElementById('modal-iframe');
-    const getEmbedUrl = (url) => {
-        if (!url) return '';
-        // If it's a Google Drive link, convert sharing link to preview link
-        if (url.includes('drive.google.com')) {
-            let fileId = '';
-            const match = url.match(/\/file\/d\/(.+?)\/|\?id=(.+?)(&|$)/);
-            if (match) {
-                fileId = match[1] || match[2];
-                return `https://drive.google.com/file/d/${fileId}/preview`;
+    const cardRevealObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('in-view');
+                cardRevealObs.unobserve(e.target);
             }
-        }
-        return url;
-    };
-    const openModal=url=>{
-        const embedUrl = getEmbedUrl(url);
-        iframe.src=embedUrl;
-        modal.classList.add('active');
-        document.body.style.overflow='hidden';
-    };
-    const closeModal=()=>{modal.classList.remove('active');setTimeout(()=>iframe.src='',400);document.body.style.overflow='';};
-    document.querySelectorAll('.work-card').forEach(card=>{
-        card.addEventListener('click',()=>{const url=card.getAttribute('data-video');if(url)openModal(url);});
+        });
+    }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+    allVCards.forEach(c => cardRevealObs.observe(c));
+
+    /* CATEGORY FILTER — animated transition */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const vCards = allVCards;
+    const videoGrid = document.getElementById('videoGrid');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (btn.classList.contains('active')) return;
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.getAttribute('data-filter');
+
+            // Phase 1: fade out all currently visible cards
+            const currentlyVisible = [...vCards].filter(c => !c.classList.contains('hidden'));
+            currentlyVisible.forEach(card => {
+                card.style.transition = 'opacity .18s ease, transform .18s ease';
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(10px) scale(0.97)';
+            });
+
+            // Phase 2: after fade, swap visibility and stagger new cards in
+            setTimeout(() => {
+                let idx = 0;
+                let hasVisible = false;
+
+                vCards.forEach(card => {
+                    const show = filter === 'all' || card.getAttribute('data-category') === filter;
+
+                    // Reset any inline style overrides from phase 1
+                    card.style.transition = '';
+                    card.style.opacity = '';
+                    card.style.transform = '';
+
+                    if (show) {
+                        card.classList.remove('hidden');
+                        card.classList.remove('in-view');
+                        const delay = `${idx * 0.07}s`;
+                        card.style.setProperty('--stagger', delay);
+                        // Nudge reflow so transition fires fresh
+                        void card.offsetWidth;
+                        card.classList.add('in-view');
+                        idx++;
+                        hasVisible = true;
+                    } else {
+                        card.classList.add('hidden');
+                        card.classList.remove('in-view');
+                    }
+                });
+
+                videoGrid?.classList.toggle('no-results', !hasVisible);
+            }, 200);
+        });
     });
-    document.querySelector('.modal-close')?.addEventListener('click',closeModal);
-    document.querySelector('.modal-backdrop')?.addEventListener('click',closeModal);
-    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal?.classList.contains('active'))closeModal();});
+
+    /* VIDEO MODAL — lazy-load iframe on click */
+    const modal = document.getElementById('video-modal');
+    const modalIframe = document.getElementById('modal-iframe');
+
+    const modalDriveLink = document.getElementById('modal-drive-link');
+
+    vCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const videoUrl = card.getAttribute('data-video');
+            const title = card.querySelector('h4')?.textContent || 'Video';
+            if (videoUrl && modalIframe && modal) {
+                // Use the /preview URL as-is — Google Drive does not support ?autoplay=1
+                modalIframe.src = videoUrl;
+                if (modalDriveLink) modalDriveLink.href = videoUrl.replace('/preview', '/view');
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    const closeModal = () => {
+        if (!modal) return;
+        modal.classList.remove('active');
+        setTimeout(() => { if (modalIframe) modalIframe.src = ''; }, 400);
+        document.body.style.overflow = '';
+    };
+
+    document.querySelector('.modal-close')?.addEventListener('click', closeModal);
+    document.querySelector('.modal-backdrop')?.addEventListener('click', closeModal);
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && modal?.classList.contains('active')) closeModal();
+    });
+
 
     /* SCROLL TOP */
     const scrollBtn=document.getElementById('scrollTopBtn');
