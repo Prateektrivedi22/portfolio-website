@@ -190,220 +190,507 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO — Editorial Column Layout -->
+    <!-- PORTFOLIO — Category Filter Grid -->
     <section id="portfolio" class="portfolio">
         <div class="portfolio-intro reveal-up">
             <div class="section-label">03 / Portfolio</div>
             <div class="portfolio-intro-inner">
-                <h2 class="section-title">Featured <em>Work</em></h2>
-                <p class="portfolio-intro-text">Every project is a story. Here's how each chapter looks.</p>
+                <h2 class="section-title">Work <em>Showcase</em></h2>
+                <p class="portfolio-intro-text">A cinematic journey through visual storytelling &amp; animation.</p>
             </div>
         </div>
 
-        <!-- Column Layout -->
-        <div class="work-columns">
+        <!-- Category Filter Bar -->
+        <div class="portfolio-filters reveal-up" style="--delay:0.1s">
+            <button class="filter-btn active" data-filter="all" id="filter-all">All <span
+                    class="filter-count">24</span></button>
+            <button class="filter-btn" data-filter="foreign-wedding" id="filter-fw">Foreign Wedding <span
+                    class="filter-count">6</span></button>
+            <button class="filter-btn" data-filter="gaming" id="filter-gaming">Gaming <span
+                    class="filter-count">1</span></button>
+            <button class="filter-btn" data-filter="iman-gadzi" id="filter-ig">Iman Gadzi <span
+                    class="filter-count">1</span></button>
+            <button class="filter-btn" data-filter="indian-wedding" id="filter-iw">Indian Wedding <span
+                    class="filter-count">2</span></button>
+            <button class="filter-btn" data-filter="map-animation" id="filter-map">Map Animation <span
+                    class="filter-count">3</span></button>
+            <button class="filter-btn" data-filter="motion-graphics" id="filter-mg">Motion Graphics <span
+                    class="filter-count">5</span></button>
+            <button class="filter-btn" data-filter="rap" id="filter-rap">Rap <span
+                    class="filter-count">1</span></button>
+            <button class="filter-btn" data-filter="real-estate" id="filter-re">Real Estate <span
+                    class="filter-count">2</span></button>
+            <button class="filter-btn" data-filter="talking-head" id="filter-th">Talking Head <span
+                    class="filter-count">2</span></button>
+            <button class="filter-btn" data-filter="trendy-reel" id="filter-tr">Trendy Reel <span
+                    class="filter-count">1</span></button>
+        </div>
 
-            <!-- Col 1: Brand Film -->
-            <div class="work-col reveal-col" style="--col-delay:0s">
-                <div class="col-header">
-                    <span class="col-num">01</span>
-                    <h3 class="col-title">Brand<br>Film</h3>
-                    <div class="col-line"></div>
-                    <span class="col-count">2 Works</span>
-                </div>
-                <div class="col-items">
-                    <div class="work-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1">
-                        <div class="work-card-img">
-                            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=600&q=80"
-                                alt="Nike Tech Campaign">
-                            <div class="work-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="6 3 20 12 6 21 6 3" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <h4>Nike Tech Campaign</h4>
-                            <div class="work-meta">
-                                <span>Brand Film</span>
-                                <span class="work-dot">&#183;</span>
-                                <span>2024</span>
-                            </div>
-                        </div>
+        <!-- Video Grid -->
+        <div class="video-grid" id="videoGrid">
+
+            <!-- FOREIGN WEDDING (6) -->
+            <div class="v-card" data-category="foreign-wedding"
+                data-video="https://drive.google.com/file/d/1FrUM6xMKjO9l-cR7pX4Udzgu8oqcMoe9/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80"
+                        alt="Destination Wedding Film" loading="lazy">
+                    <span class="v-card-badge">Foreign Wedding</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
                     </div>
-                    <div class="work-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1">
-                        <div class="work-card-img">
-                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=600&q=80"
-                                alt="Neon Nights">
-                            <div class="work-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="6 3 20 12 6 21 6 3" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <h4>Neon Nights Music Video</h4>
-                            <div class="work-meta">
-                                <span>Brand Film</span>
-                                <span class="work-dot">&#183;</span>
-                                <span>2024</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Destination Wedding Film</h4>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Col 2: Social Reel -->
-            <div class="work-col reveal-col" style="--col-delay:0.12s">
-                <div class="col-header">
-                    <span class="col-num">02</span>
-                    <h3 class="col-title">Social<br>Reel</h3>
-                    <div class="col-line"></div>
-                    <span class="col-count">2 Works</span>
-                </div>
-                <div class="col-items">
-                    <div class="work-card" data-video="https://player.vimeo.com/video/455325916?autoplay=1">
-                        <div class="work-card-img">
-                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80"
-                                alt="Autumn Drop">
-                            <div class="work-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="6 3 20 12 6 21 6 3" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <h4>Instagram Autumn Drop</h4>
-                            <div class="work-meta">
-                                <span>Social Reel</span>
-                                <span class="work-dot">&#183;</span>
-                                <span>2024</span>
-                            </div>
-                        </div>
+            <div class="v-card" data-category="foreign-wedding"
+                data-video="https://drive.google.com/file/d/1vif49QI9qbufPr-C8T6EyWLFHsxWFM7O/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80"
+                        alt="European Love Story" loading="lazy">
+                    <span class="v-card-badge">Foreign Wedding</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
                     </div>
-                    <div class="work-card" data-video="https://player.vimeo.com/video/455325916?autoplay=1">
-                        <div class="work-card-img">
-                            <img src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?auto=format&fit=crop&w=600&q=80"
-                                alt="TikTok Transition">
-                            <div class="work-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="6 3 20 12 6 21 6 3" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <h4>TikTok Trend Transition</h4>
-                            <div class="work-meta">
-                                <span>Social Reel</span>
-                                <span class="work-dot">&#183;</span>
-                                <span>2023</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>European Love Story</h4>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Col 3: 2D Animation -->
-            <div class="work-col reveal-col" style="--col-delay:0.24s">
-                <div class="col-header">
-                    <span class="col-num">03</span>
-                    <h3 class="col-title">2D<br>Animation</h3>
-                    <div class="col-line"></div>
-                    <span class="col-count">2 Works</span>
-                </div>
-                <div class="col-items">
-                    <div class="work-card" data-video="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1">
-                        <div class="work-card-img">
-                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80"
-                                alt="Cyberpunk">
-                            <div class="work-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="6 3 20 12 6 21 6 3" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <h4>Cyberpunk Title Sequence</h4>
-                            <div class="work-meta">
-                                <span>2D Animation</span>
-                                <span class="work-dot">&#183;</span>
-                                <span>2024</span>
-                            </div>
-                        </div>
+            <div class="v-card" data-category="foreign-wedding"
+                data-video="https://drive.google.com/file/d/1ETwHRbq_fDhSuIBshSdBbBwioGkZyIN9/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1537907690979-19e24c22a7e3?auto=format&fit=crop&w=600&q=80"
+                        alt="Luxury Abroad Edit" loading="lazy">
+                    <span class="v-card-badge">Foreign Wedding</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
                     </div>
-                    <div class="work-card" data-video="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1">
-                        <div class="work-card-img">
-                            <img src="https://images.unsplash.com/photo-1580894732444-8ecbef79bd1e?auto=format&fit=crop&w=600&q=80"
-                                alt="App Explainer">
-                            <div class="work-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="6 3 20 12 6 21 6 3" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <h4>App Explainer</h4>
-                            <div class="work-meta">
-                                <span>2D Animation</span>
-                                <span class="work-dot">&#183;</span>
-                                <span>2023</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Luxury Abroad Edit</h4>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Col 4: Motion Graphics -->
-            <div class="work-col reveal-col" style="--col-delay:0.36s">
-                <div class="col-header">
-                    <span class="col-num">04</span>
-                    <h3 class="col-title">Motion<br>Graphics</h3>
-                    <div class="col-line"></div>
-                    <span class="col-count">2 Works</span>
-                </div>
-                <div class="col-items">
-                    <div class="work-card" data-video="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1">
-                        <div class="work-card-img">
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
-                                alt="Motion Reel">
-                            <div class="work-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="6 3 20 12 6 21 6 3" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <h4>Product Launch Reel</h4>
-                            <div class="work-meta">
-                                <span>Motion Graphics</span>
-                                <span class="work-dot">&#183;</span>
-                                <span>2024</span>
-                            </div>
-                        </div>
+            <div class="v-card" data-category="foreign-wedding"
+                data-video="https://drive.google.com/file/d/14YKx52c00szF5ruw_9GxsXQi4DyFgKO4/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80"
+                        alt="Overseas Romance" loading="lazy">
+                    <span class="v-card-badge">Foreign Wedding</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
                     </div>
-                    <div class="work-card" data-video="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1">
-                        <div class="work-card-img">
-                            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=600&q=80"
-                                alt="Kinetic Type">
-                            <div class="work-card-play">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="6 3 20 12 6 21 6 3" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <h4>Kinetic Typography Ad</h4>
-                            <div class="work-meta">
-                                <span>Motion Graphics</span>
-                                <span class="work-dot">&#183;</span>
-                                <span>2023</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Overseas Romance</h4>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
                     </div>
                 </div>
             </div>
 
-        </div><!-- end .work-columns -->
+            <div class="v-card" data-category="foreign-wedding"
+                data-video="https://drive.google.com/file/d/1lNGkp4_2-LkB3K9Z-2s-TV5vv-b0BnoM/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&w=600&q=80"
+                        alt="Beach Wedding Cinematic" loading="lazy">
+                    <span class="v-card-badge">Foreign Wedding</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Beach Wedding Cinematic</h4>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="foreign-wedding"
+                data-video="https://drive.google.com/file/d/1GXBTCsrw3GNtS3KOviyqRs2eoA3yajat/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1583156598943-4f47e3cc2fe1?auto=format&fit=crop&w=600&q=80"
+                        alt="International Wedding Highlight" loading="lazy">
+                    <span class="v-card-badge">Foreign Wedding</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>International Wedding Highlight</h4>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GAMING (1) -->
+            <div class="v-card" data-category="gaming"
+                data-video="https://drive.google.com/file/d/1FcfcFpLIz4HP6eeVZtpMGiDLZD9LxIdx/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80"
+                        alt="COD High Octane Edit" loading="lazy">
+                    <span class="v-card-badge">Gaming</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>COD High Octane Edit</h4>
+                    <div class="v-card-meta"><span>Gaming</span><span class="v-card-dot">·</span><span>2024</span></div>
+                </div>
+            </div>
+
+            <!-- IMAN GADZI STYLE (1) -->
+            <div class="v-card" data-category="iman-gadzi"
+                data-video="https://drive.google.com/file/d/1xR314Y-x3hUSVMlBMK0tk3qo2Jt8UkZu/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+                        alt="Entrepreneur Mindset Edit" loading="lazy">
+                    <span class="v-card-badge">Iman Gadzi Style</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Entrepreneur Mindset Edit</h4>
+                    <div class="v-card-meta"><span>Motivational</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INDIAN WEDDING (2) -->
+            <div class="v-card" data-category="indian-wedding"
+                data-video="https://drive.google.com/file/d/1Wt8lHkT67xbzdXLRSNmjww4WmbkIsQcH/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80"
+                        alt="Indian Wedding Highlight" loading="lazy">
+                    <span class="v-card-badge">Indian Wedding</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Indian Wedding Highlight</h4>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="indian-wedding"
+                data-video="https://drive.google.com/file/d/1d4Wd_550A4iFw7HVplxEc1i2Cs32JPU4/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80"
+                        alt="Traditional Wedding Film" loading="lazy">
+                    <span class="v-card-badge">Indian Wedding</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Traditional Wedding Film</h4>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAP ANIMATION (3) -->
+            <div class="v-card" data-category="map-animation"
+                data-video="https://drive.google.com/file/d/1nWrDn7prcCkX42BviL3CZWtC59PyhIan/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80"
+                        alt="Bangladesh Map Animation" loading="lazy">
+                    <span class="v-card-badge">Map Animation</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Bangladesh Map Animation</h4>
+                    <div class="v-card-meta"><span>3D Maps</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="map-animation"
+                data-video="https://drive.google.com/file/d/1UgS_VOj_a_Z8-y0czq24aAxk9nkTizYc/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1582230353136-1936c507c87c?auto=format&fit=crop&w=600&q=80"
+                        alt="Hamburg 1943 Historical Map" loading="lazy">
+                    <span class="v-card-badge">Map Animation</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Hamburg 1943 Historical Map</h4>
+                    <div class="v-card-meta"><span>3D Maps</span><span class="v-card-dot">·</span><span>2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="map-animation"
+                data-video="https://drive.google.com/file/d/1_OxOLYiaHqF4uunWJuR8ZoBuVPYWaDQn/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&w=600&q=80"
+                        alt="India-Russia Geopolitical Map" loading="lazy">
+                    <span class="v-card-badge">Map Animation</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>India-Russia Geopolitical Map</h4>
+                    <div class="v-card-meta"><span>3D Maps</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOTION GRAPHICS (5) -->
+            <div class="v-card" data-category="motion-graphics"
+                data-video="https://drive.google.com/file/d/1NVIMwcqlT9APT3dwc91qo2SBEC2JCA6d/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbbda536ad37?auto=format&fit=crop&w=600&q=80"
+                        alt="Motion Graphics Reel" loading="lazy">
+                    <span class="v-card-badge">Motion Graphics</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Motion Graphics Reel</h4>
+                    <div class="v-card-meta"><span>Motion</span><span class="v-card-dot">·</span><span>2024</span></div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="motion-graphics"
+                data-video="https://drive.google.com/file/d/1QJ69tTLHmREvLGZjYdGTlkfUGoOe55ML/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=600&q=80"
+                        alt="Brand Identity Animation" loading="lazy">
+                    <span class="v-card-badge">Motion Graphics</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Brand Identity Animation</h4>
+                    <div class="v-card-meta"><span>Motion</span><span class="v-card-dot">·</span><span>2024</span></div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="motion-graphics"
+                data-video="https://drive.google.com/file/d/1O7dBQIKbvXftkBAV9Arqf0y2MWBr2a2-/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=600&q=80"
+                        alt="Market Insights Visuals" loading="lazy">
+                    <span class="v-card-badge">Motion Graphics</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Market Insights Visuals</h4>
+                    <div class="v-card-meta"><span>Motion</span><span class="v-card-dot">·</span><span>2024</span></div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="motion-graphics"
+                data-video="https://drive.google.com/file/d/1rtEro3yza0OjO6izsWSQZ2sgnuEYfXfP/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=600&q=80"
+                        alt="Corporate Motion Reel" loading="lazy">
+                    <span class="v-card-badge">Motion Graphics</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Corporate Motion Reel</h4>
+                    <div class="v-card-meta"><span>Motion</span><span class="v-card-dot">·</span><span>2024</span></div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="motion-graphics"
+                data-video="https://drive.google.com/file/d/1byELuegTq0guv9QJCQ29fcUpxWanmwhI/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=600&q=80"
+                        alt="Dynamic Info Graphics" loading="lazy">
+                    <span class="v-card-badge">Motion Graphics</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Dynamic Info Graphics</h4>
+                    <div class="v-card-meta"><span>Motion</span><span class="v-card-dot">·</span><span>2024</span></div>
+                </div>
+            </div>
+
+            <!-- RAP (1) -->
+            <div class="v-card" data-category="rap"
+                data-video="https://drive.google.com/file/d/1hckyPN8nDuBXxMT_l-Wci0zhbLOf06BA/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&w=600&q=80"
+                        alt="Lyrical Rap Music Video" loading="lazy">
+                    <span class="v-card-badge">Rap</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Lyrical Rap Music Video</h4>
+                    <div class="v-card-meta"><span>Music Video</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REAL ESTATE (2) -->
+            <div class="v-card" data-category="real-estate"
+                data-video="https://drive.google.com/file/d/1gWG027M9h8g7m0eJDBBzHN76wK8VSKMh/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80"
+                        alt="Luxury Property Feature" loading="lazy">
+                    <span class="v-card-badge">Real Estate</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Luxury Property Feature</h4>
+                    <div class="v-card-meta"><span>Real Estate</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="real-estate"
+                data-video="https://drive.google.com/file/d/1_vgNcgPVc6vyjEY_D5LtmrkcE1fmrPOu/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=600&q=80"
+                        alt="Real Estate Showcase" loading="lazy">
+                    <span class="v-card-badge">Real Estate</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Real Estate Showcase</h4>
+                    <div class="v-card-meta"><span>Real Estate</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TALKING HEAD (2) -->
+            <div class="v-card" data-category="talking-head"
+                data-video="https://drive.google.com/file/d/1774wWh1AwV6p4ZX1ph-88q6VW3T3dWl9/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80"
+                        alt="Expert Educational Series" loading="lazy">
+                    <span class="v-card-badge">Talking Head</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Expert Educational Series</h4>
+                    <div class="v-card-meta"><span>Talking Head</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-card" data-category="talking-head"
+                data-video="https://drive.google.com/file/d/1_CX8nbjnOCexGVB7iCIz7n9-pnU4RWlh/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=600&q=80"
+                        alt="Business Coach Edit" loading="lazy">
+                    <span class="v-card-badge">Talking Head</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>Business Coach Edit</h4>
+                    <div class="v-card-meta"><span>Talking Head</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRENDY REEL (1) -->
+            <div class="v-card" data-category="trendy-reel"
+                data-video="https://drive.google.com/file/d/1ymc5BT5CGhtw4OCCdXI2BzKCs8lHLnbH/preview">
+                <div class="v-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?auto=format&fit=crop&w=600&q=80"
+                        alt="High-Pace Lifestyle Reel" loading="lazy">
+                    <span class="v-card-badge">Trendy Reel</span>
+                    <div class="v-card-play">
+                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="v-card-info">
+                    <h4>High-Pace Lifestyle Reel</h4>
+                    <div class="v-card-meta"><span>Social Reel</span><span class="v-card-dot">·</span><span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-empty">No videos in this category yet.</div>
+        </div>
     </section>
 
 
@@ -443,12 +730,29 @@
     <div id="video-modal" class="video-modal">
         <div class="modal-backdrop"></div>
         <div class="modal-content">
-            <button class="modal-close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <button class="modal-close" id="modal-close-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="18" y1="6" x2="6" y2="18" />
                     <line x1="6" y1="6" x2="18" y2="18" />
-                </svg></button>
-            <div class="video-container"><iframe id="modal-iframe" src="" frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                </svg>
+            </button>
+            <div class="video-container">
+                <iframe id="modal-iframe" src="" frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen
+                    sandbox="allow-scripts allow-same-origin allow-presentation allow-popups">
+                </iframe>
+            </div>
+            <div class="modal-fallback">
+                <span class="modal-fallback-text">Video not loading?</span>
+                <a id="modal-drive-link" href="#" target="_blank" rel="noopener" class="modal-drive-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Open in Google Drive
+                </a>
+            </div>
         </div>
     </div>
 
