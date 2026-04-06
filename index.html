@@ -34,7 +34,7 @@
         <div class="nav-progress"></div>
     </nav>
 
-    <!-- HERO — clean, no buttons, no scroll hint -->
+    <!-- HERO -->
     <section class="hero" id="home">
         <div class="hero-bg-video">
             <div class="hero-grid-lines"></div>
@@ -69,14 +69,15 @@
                 Commercials &middot; Motion Graphics &middot; Cinematic Color Grading
             </p>
             <div class="hero-stats">
-                <div class="stat"><span class="stat-number" data-target="500">0</span><span
-                        class="stat-plus">+</span><span class="stat-label">Global Clients</span></div>
+                <div class="stat stat-large">
+                    <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Global Clients</span>
+                </div>
                 <div class="stat-divider"></div>
-                <div class="stat"><span class="stat-number" data-target="3">0</span><span
-                        class="stat-plus">.5</span><span class="stat-label">Years Experience</span></div>
-                <div class="stat-divider"></div>
-                <div class="stat"><span class="stat-number" data-target="120">0</span><span
-                        class="stat-plus">+</span><span class="stat-label">Projects Done</span></div>
+                <div class="stat stat-large">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">.5</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
             </div>
         </div>
 
@@ -190,7 +191,7 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO — Category Filter Grid -->
+    <!-- PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="portfolio-intro reveal-up">
             <div class="section-label">03 / Portfolio</div>
@@ -200,162 +201,101 @@
             </div>
         </div>
 
-        <!-- Category Filter Bar -->
         <div class="portfolio-filters reveal-up" style="--delay:0.1s">
-            <button class="filter-btn active" data-filter="all" id="filter-all">All <span
-                    class="filter-count">24</span></button>
-            <button class="filter-btn" data-filter="foreign-wedding" id="filter-fw">Foreign Wedding <span
-                    class="filter-count">6</span></button>
-            <button class="filter-btn" data-filter="gaming" id="filter-gaming">Gaming <span
-                    class="filter-count">1</span></button>
-            <button class="filter-btn" data-filter="iman-gadzi" id="filter-ig">Iman Gadzi <span
-                    class="filter-count">1</span></button>
-            <button class="filter-btn" data-filter="indian-wedding" id="filter-iw">Indian Wedding <span
-                    class="filter-count">2</span></button>
-            <button class="filter-btn" data-filter="map-animation" id="filter-map">Map Animation <span
-                    class="filter-count">3</span></button>
-            <button class="filter-btn" data-filter="motion-graphics" id="filter-mg">Motion Graphics <span
-                    class="filter-count">5</span></button>
-            <button class="filter-btn" data-filter="rap" id="filter-rap">Rap <span
-                    class="filter-count">1</span></button>
-            <button class="filter-btn" data-filter="real-estate" id="filter-re">Real Estate <span
-                    class="filter-count">2</span></button>
-            <button class="filter-btn" data-filter="talking-head" id="filter-th">Talking Head <span
-                    class="filter-count">2</span></button>
-            <button class="filter-btn" data-filter="trendy-reel" id="filter-tr">Trendy Reel <span
-                    class="filter-count">1</span></button>
+            <button class="filter-btn active" data-filter="all" id="filter-all">All <span class="filter-count">24</span></button>
+            <button class="filter-btn" data-filter="foreign-wedding" id="filter-fw">Foreign Wedding <span class="filter-count">6</span></button>
+            <button class="filter-btn" data-filter="gaming" id="filter-gaming">Gaming <span class="filter-count">1</span></button>
+            <button class="filter-btn" data-filter="iman-gadzi" id="filter-ig">Iman Gadzi <span class="filter-count">1</span></button>
+            <button class="filter-btn" data-filter="indian-wedding" id="filter-iw">Indian Wedding <span class="filter-count">2</span></button>
+            <button class="filter-btn" data-filter="map-animation" id="filter-map">Map Animation <span class="filter-count">3</span></button>
+            <button class="filter-btn" data-filter="motion-graphics" id="filter-mg">Motion Graphics <span class="filter-count">5</span></button>
+            <button class="filter-btn" data-filter="rap" id="filter-rap">Rap <span class="filter-count">1</span></button>
+            <button class="filter-btn" data-filter="real-estate" id="filter-re">Real Estate <span class="filter-count">2</span></button>
+            <button class="filter-btn" data-filter="talking-head" id="filter-th">Talking Head <span class="filter-count">2</span></button>
+            <button class="filter-btn" data-filter="trendy-reel" id="filter-tr">Trendy Reel <span class="filter-count">1</span></button>
         </div>
 
-        <!-- Video Grid -->
         <div class="video-grid" id="videoGrid">
 
             <!-- FOREIGN WEDDING (6) -->
-            <div class="v-card" data-category="foreign-wedding"
-                data-video="https://drive.google.com/file/d/1FrUM6xMKjO9l-cR7pX4Udzgu8oqcMoe9/preview">
+            <div class="v-card" data-category="foreign-wedding" data-video="https://drive.google.com/file/d/1FrUM6xMKjO9l-cR7pX4Udzgu8oqcMoe9/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80"
-                        alt="Destination Wedding Film" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Destination Wedding Film" loading="lazy">
                     <span class="v-card-badge">Foreign Wedding</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Destination Wedding Film</h4>
-                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="foreign-wedding"
-                data-video="https://drive.google.com/file/d/1vif49QI9qbufPr-C8T6EyWLFHsxWFM7O/preview">
+            <div class="v-card" data-category="foreign-wedding" data-video="https://drive.google.com/file/d/1vif49QI9qbufPr-C8T6EyWLFHsxWFM7O/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80"
-                        alt="European Love Story" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80" alt="European Love Story" loading="lazy">
                     <span class="v-card-badge">Foreign Wedding</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>European Love Story</h4>
-                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="foreign-wedding"
-                data-video="https://drive.google.com/file/d/1ETwHRbq_fDhSuIBshSdBbBwioGkZyIN9/preview">
+            <div class="v-card" data-category="foreign-wedding" data-video="https://drive.google.com/file/d/1ETwHRbq_fDhSuIBshSdBbBwioGkZyIN9/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1537907690979-19e24c22a7e3?auto=format&fit=crop&w=600&q=80"
-                        alt="Luxury Abroad Edit" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1537907690979-19e24c22a7e3?auto=format&fit=crop&w=600&q=80" alt="Luxury Abroad Edit" loading="lazy">
                     <span class="v-card-badge">Foreign Wedding</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Luxury Abroad Edit</h4>
-                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="foreign-wedding"
-                data-video="https://drive.google.com/file/d/14YKx52c00szF5ruw_9GxsXQi4DyFgKO4/preview">
+            <div class="v-card" data-category="foreign-wedding" data-video="https://drive.google.com/file/d/14YKx52c00szF5ruw_9GxsXQi4DyFgKO4/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80"
-                        alt="Overseas Romance" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Overseas Romance" loading="lazy">
                     <span class="v-card-badge">Foreign Wedding</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Overseas Romance</h4>
-                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="foreign-wedding"
-                data-video="https://drive.google.com/file/d/1lNGkp4_2-LkB3K9Z-2s-TV5vv-b0BnoM/preview">
+            <div class="v-card" data-category="foreign-wedding" data-video="https://drive.google.com/file/d/1lNGkp4_2-LkB3K9Z-2s-TV5vv-b0BnoM/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&w=600&q=80"
-                        alt="Beach Wedding Cinematic" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&w=600&q=80" alt="Beach Wedding Cinematic" loading="lazy">
                     <span class="v-card-badge">Foreign Wedding</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Beach Wedding Cinematic</h4>
-                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="foreign-wedding"
-                data-video="https://drive.google.com/file/d/1GXBTCsrw3GNtS3KOviyqRs2eoA3yajat/preview">
+            <div class="v-card" data-category="foreign-wedding" data-video="https://drive.google.com/file/d/1GXBTCsrw3GNtS3KOviyqRs2eoA3yajat/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1583156598943-4f47e3cc2fe1?auto=format&fit=crop&w=600&q=80"
-                        alt="International Wedding Highlight" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1583156598943-4f47e3cc2fe1?auto=format&fit=crop&w=600&q=80" alt="International Wedding Highlight" loading="lazy">
                     <span class="v-card-badge">Foreign Wedding</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>International Wedding Highlight</h4>
-                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
             <!-- GAMING (1) -->
-            <div class="v-card" data-category="gaming"
-                data-video="https://drive.google.com/file/d/1FcfcFpLIz4HP6eeVZtpMGiDLZD9LxIdx/preview">
+            <div class="v-card" data-category="gaming" data-video="https://drive.google.com/file/d/1FcfcFpLIz4HP6eeVZtpMGiDLZD9LxIdx/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80"
-                        alt="COD High Octane Edit" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80" alt="COD High Octane Edit" loading="lazy">
                     <span class="v-card-badge">Gaming</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>COD High Octane Edit</h4>
@@ -364,134 +304,86 @@
             </div>
 
             <!-- IMAN GADZI STYLE (1) -->
-            <div class="v-card" data-category="iman-gadzi"
-                data-video="https://drive.google.com/file/d/1xR314Y-x3hUSVMlBMK0tk3qo2Jt8UkZu/preview">
+            <div class="v-card" data-category="iman-gadzi" data-video="https://drive.google.com/file/d/1xR314Y-x3hUSVMlBMK0tk3qo2Jt8UkZu/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
-                        alt="Entrepreneur Mindset Edit" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Entrepreneur Mindset Edit" loading="lazy">
                     <span class="v-card-badge">Iman Gadzi Style</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Entrepreneur Mindset Edit</h4>
-                    <div class="v-card-meta"><span>Motivational</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Motivational</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
             <!-- INDIAN WEDDING (2) -->
-            <div class="v-card" data-category="indian-wedding"
-                data-video="https://drive.google.com/file/d/1Wt8lHkT67xbzdXLRSNmjww4WmbkIsQcH/preview">
+            <div class="v-card" data-category="indian-wedding" data-video="https://drive.google.com/file/d/1Wt8lHkT67xbzdXLRSNmjww4WmbkIsQcH/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80"
-                        alt="Indian Wedding Highlight" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Indian Wedding Highlight" loading="lazy">
                     <span class="v-card-badge">Indian Wedding</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Indian Wedding Highlight</h4>
-                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="indian-wedding"
-                data-video="https://drive.google.com/file/d/1d4Wd_550A4iFw7HVplxEc1i2Cs32JPU4/preview">
+            <div class="v-card" data-category="indian-wedding" data-video="https://drive.google.com/file/d/1d4Wd_550A4iFw7HVplxEc1i2Cs32JPU4/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80"
-                        alt="Traditional Wedding Film" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80" alt="Traditional Wedding Film" loading="lazy">
                     <span class="v-card-badge">Indian Wedding</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Traditional Wedding Film</h4>
-                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Cinematic</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
             <!-- MAP ANIMATION (3) -->
-            <div class="v-card" data-category="map-animation"
-                data-video="https://drive.google.com/file/d/1nWrDn7prcCkX42BviL3CZWtC59PyhIan/preview">
+            <div class="v-card" data-category="map-animation" data-video="https://drive.google.com/file/d/1nWrDn7prcCkX42BviL3CZWtC59PyhIan/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80"
-                        alt="Bangladesh Map Animation" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80" alt="Bangladesh Map Animation" loading="lazy">
                     <span class="v-card-badge">Map Animation</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Bangladesh Map Animation</h4>
-                    <div class="v-card-meta"><span>3D Maps</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>3D Maps</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="map-animation"
-                data-video="https://drive.google.com/file/d/1UgS_VOj_a_Z8-y0czq24aAxk9nkTizYc/preview">
+            <div class="v-card" data-category="map-animation" data-video="https://drive.google.com/file/d/1UgS_VOj_a_Z8-y0czq24aAxk9nkTizYc/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1582230353136-1936c507c87c?auto=format&fit=crop&w=600&q=80"
-                        alt="Hamburg 1943 Historical Map" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1582230353136-1936c507c87c?auto=format&fit=crop&w=600&q=80" alt="Hamburg 1943 Historical Map" loading="lazy">
                     <span class="v-card-badge">Map Animation</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Hamburg 1943 Historical Map</h4>
-                    <div class="v-card-meta"><span>3D Maps</span><span class="v-card-dot">·</span><span>2023</span>
-                    </div>
+                    <div class="v-card-meta"><span>3D Maps</span><span class="v-card-dot">·</span><span>2023</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="map-animation"
-                data-video="https://drive.google.com/file/d/1_OxOLYiaHqF4uunWJuR8ZoBuVPYWaDQn/preview">
+            <div class="v-card" data-category="map-animation" data-video="https://drive.google.com/file/d/1_OxOLYiaHqF4uunWJuR8ZoBuVPYWaDQn/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&w=600&q=80"
-                        alt="India-Russia Geopolitical Map" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?auto=format&fit=crop&w=600&q=80" alt="India-Russia Geopolitical Map" loading="lazy">
                     <span class="v-card-badge">Map Animation</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>India-Russia Geopolitical Map</h4>
-                    <div class="v-card-meta"><span>3D Maps</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>3D Maps</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
             <!-- MOTION GRAPHICS (5) -->
-            <div class="v-card" data-category="motion-graphics"
-                data-video="https://drive.google.com/file/d/1NVIMwcqlT9APT3dwc91qo2SBEC2JCA6d/preview">
+            <div class="v-card" data-category="motion-graphics" data-video="https://drive.google.com/file/d/1NVIMwcqlT9APT3dwc91qo2SBEC2JCA6d/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1551288049-bbbda536ad37?auto=format&fit=crop&w=600&q=80"
-                        alt="Motion Graphics Reel" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbbda536ad37?auto=format&fit=crop&w=600&q=80" alt="Motion Graphics Reel" loading="lazy">
                     <span class="v-card-badge">Motion Graphics</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Motion Graphics Reel</h4>
@@ -499,17 +391,11 @@
                 </div>
             </div>
 
-            <div class="v-card" data-category="motion-graphics"
-                data-video="https://drive.google.com/file/d/1QJ69tTLHmREvLGZjYdGTlkfUGoOe55ML/preview">
+            <div class="v-card" data-category="motion-graphics" data-video="https://drive.google.com/file/d/1QJ69tTLHmREvLGZjYdGTlkfUGoOe55ML/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=600&q=80"
-                        alt="Brand Identity Animation" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=600&q=80" alt="Brand Identity Animation" loading="lazy">
                     <span class="v-card-badge">Motion Graphics</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Brand Identity Animation</h4>
@@ -517,17 +403,11 @@
                 </div>
             </div>
 
-            <div class="v-card" data-category="motion-graphics"
-                data-video="https://drive.google.com/file/d/1O7dBQIKbvXftkBAV9Arqf0y2MWBr2a2-/preview">
+            <div class="v-card" data-category="motion-graphics" data-video="https://drive.google.com/file/d/1O7dBQIKbvXftkBAV9Arqf0y2MWBr2a2-/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=600&q=80"
-                        alt="Market Insights Visuals" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=600&q=80" alt="Market Insights Visuals" loading="lazy">
                     <span class="v-card-badge">Motion Graphics</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Market Insights Visuals</h4>
@@ -535,17 +415,11 @@
                 </div>
             </div>
 
-            <div class="v-card" data-category="motion-graphics"
-                data-video="https://drive.google.com/file/d/1rtEro3yza0OjO6izsWSQZ2sgnuEYfXfP/preview">
+            <div class="v-card" data-category="motion-graphics" data-video="https://drive.google.com/file/d/1rtEro3yza0OjO6izsWSQZ2sgnuEYfXfP/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=600&q=80"
-                        alt="Corporate Motion Reel" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=600&q=80" alt="Corporate Motion Reel" loading="lazy">
                     <span class="v-card-badge">Motion Graphics</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Corporate Motion Reel</h4>
@@ -553,17 +427,11 @@
                 </div>
             </div>
 
-            <div class="v-card" data-category="motion-graphics"
-                data-video="https://drive.google.com/file/d/1byELuegTq0guv9QJCQ29fcUpxWanmwhI/preview">
+            <div class="v-card" data-category="motion-graphics" data-video="https://drive.google.com/file/d/1byELuegTq0guv9QJCQ29fcUpxWanmwhI/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=600&q=80"
-                        alt="Dynamic Info Graphics" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=600&q=80" alt="Dynamic Info Graphics" loading="lazy">
                     <span class="v-card-badge">Motion Graphics</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Dynamic Info Graphics</h4>
@@ -572,120 +440,78 @@
             </div>
 
             <!-- RAP (1) -->
-            <div class="v-card" data-category="rap"
-                data-video="https://drive.google.com/file/d/1hckyPN8nDuBXxMT_l-Wci0zhbLOf06BA/preview">
+            <div class="v-card" data-category="rap" data-video="https://drive.google.com/file/d/1hckyPN8nDuBXxMT_l-Wci0zhbLOf06BA/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&w=600&q=80"
-                        alt="Lyrical Rap Music Video" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&w=600&q=80" alt="Lyrical Rap Music Video" loading="lazy">
                     <span class="v-card-badge">Rap</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Lyrical Rap Music Video</h4>
-                    <div class="v-card-meta"><span>Music Video</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Music Video</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
             <!-- REAL ESTATE (2) -->
-            <div class="v-card" data-category="real-estate"
-                data-video="https://drive.google.com/file/d/1gWG027M9h8g7m0eJDBBzHN76wK8VSKMh/preview">
+            <div class="v-card" data-category="real-estate" data-video="https://drive.google.com/file/d/1gWG027M9h8g7m0eJDBBzHN76wK8VSKMh/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80"
-                        alt="Luxury Property Feature" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Luxury Property Feature" loading="lazy">
                     <span class="v-card-badge">Real Estate</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Luxury Property Feature</h4>
-                    <div class="v-card-meta"><span>Real Estate</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Real Estate</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="real-estate"
-                data-video="https://drive.google.com/file/d/1_vgNcgPVc6vyjEY_D5LtmrkcE1fmrPOu/preview">
+            <div class="v-card" data-category="real-estate" data-video="https://drive.google.com/file/d/1_vgNcgPVc6vyjEY_D5LtmrkcE1fmrPOu/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=600&q=80"
-                        alt="Real Estate Showcase" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=600&q=80" alt="Real Estate Showcase" loading="lazy">
                     <span class="v-card-badge">Real Estate</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Real Estate Showcase</h4>
-                    <div class="v-card-meta"><span>Real Estate</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Real Estate</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
             <!-- TALKING HEAD (2) -->
-            <div class="v-card" data-category="talking-head"
-                data-video="https://drive.google.com/file/d/1774wWh1AwV6p4ZX1ph-88q6VW3T3dWl9/preview">
+            <div class="v-card" data-category="talking-head" data-video="https://drive.google.com/file/d/1774wWh1AwV6p4ZX1ph-88q6VW3T3dWl9/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80"
-                        alt="Expert Educational Series" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Expert Educational Series" loading="lazy">
                     <span class="v-card-badge">Talking Head</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Expert Educational Series</h4>
-                    <div class="v-card-meta"><span>Talking Head</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Talking Head</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
-            <div class="v-card" data-category="talking-head"
-                data-video="https://drive.google.com/file/d/1_CX8nbjnOCexGVB7iCIz7n9-pnU4RWlh/preview">
+            <div class="v-card" data-category="talking-head" data-video="https://drive.google.com/file/d/1_CX8nbjnOCexGVB7iCIz7n9-pnU4RWlh/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=600&q=80"
-                        alt="Business Coach Edit" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=600&q=80" alt="Business Coach Edit" loading="lazy">
                     <span class="v-card-badge">Talking Head</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>Business Coach Edit</h4>
-                    <div class="v-card-meta"><span>Talking Head</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Talking Head</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
             <!-- TRENDY REEL (1) -->
-            <div class="v-card" data-category="trendy-reel"
-                data-video="https://drive.google.com/file/d/1ymc5BT5CGhtw4OCCdXI2BzKCs8lHLnbH/preview">
+            <div class="v-card" data-category="trendy-reel" data-video="https://drive.google.com/file/d/1ymc5BT5CGhtw4OCCdXI2BzKCs8lHLnbH/preview">
                 <div class="v-card-thumb">
-                    <img src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?auto=format&fit=crop&w=600&q=80"
-                        alt="High-Pace Lifestyle Reel" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?auto=format&fit=crop&w=600&q=80" alt="High-Pace Lifestyle Reel" loading="lazy">
                     <span class="v-card-badge">Trendy Reel</span>
-                    <div class="v-card-play">
-                        <div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="6 3 20 12 6 21 6 3" />
-                        </svg>
-                    </div>
+                    <div class="v-card-play"><div class="v-play-ring"></div><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3" /></svg></div>
                 </div>
                 <div class="v-card-info">
                     <h4>High-Pace Lifestyle Reel</h4>
-                    <div class="v-card-meta"><span>Social Reel</span><span class="v-card-dot">·</span><span>2024</span>
-                    </div>
+                    <div class="v-card-meta"><span>Social Reel</span><span class="v-card-dot">·</span><span>2024</span></div>
                 </div>
             </div>
 
@@ -693,23 +519,23 @@
         </div>
     </section>
 
-
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-top">
                 <div class="footer-logo">N<span>.</span>G</div>
                 <div class="social-links">
-                    <a href="https://wa.me/917985175601" target="_blank" aria-label="WhatsApp" class="social-link"><svg
-                            viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                        </svg></a>
-                    <a href="mailto:technedit19@gmail.com" aria-label="Email" class="social-link"><svg
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <a href="https://wa.me/917985175601" target="_blank" aria-label="WhatsApp" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:technedit19@gmail.com" aria-label="Email" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                             <polyline points="22,6 12,13 2,6" />
-                        </svg></a>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="footer-divider"></div>
